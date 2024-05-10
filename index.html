@@ -1,0 +1,337 @@
+<!-- html website
+
+plan on making a site-----------------
+
+
+following locations useful
+location.protocol
+location.host
+location.hash
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogspot Page</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR9tv72APr1TsBcpMDia94JLwveHQyr-qXoA&usqp=CAU" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+        }
+        .header-navigation {
+            position: fixed;
+            padding: 15px;
+            width: 100%;
+        }
+        .header-navigation #alignforURL {
+            text-align: right;
+        }
+        .header-navigation #alignforURL #url {
+            background-color: #808080;
+            width: 99%;
+            color: #ffffff;
+        }
+        .header-navigation ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        .header-navigation ul li {
+            list-style: none;
+            font-size: large;
+        }
+        .header-navigation ul li a {
+            transition: 1s;
+            text-decoration: none;
+            padding: 20px;
+            color: #000;
+        }
+        .header-navigation ul li a:hover {
+            transition: 1s;
+            background-color: #000;
+            color: #fff;
+        }
+        .header-navigation ul li #google-maps-search #google-maps-bar {
+            background-color: #fff;
+            height: 20px;
+            width: 150px;
+        }
+        .header-navigation ul li #google-maps-search #google-maps-btn {
+            height: 30px;
+            width: 60px;
+        }
+        #home {
+            background-color: #00ffff;
+        }
+        #home .beautiful-background-image {
+            background-image: url("beautiful\ bg\ image\ high\ def.jpg");
+            background-size: 100%;
+            font-size: xx-large;
+            text-align: right;
+        }
+        #home .beautiful-background-image h1 {
+            color: #fff;
+        }
+        #about {
+            background-color: #09ff00;
+        }
+        #about .beautiful-background-image {
+            background-image: url("beautiful\ bg\ img\ 2.avif");
+            background-size: 100%;
+            font-size: xx-large;
+            text-align: right;
+        }
+        #about .beautiful-background-image h1 {
+            color: #fff;
+        }
+        #contactus {
+            background-color: #eeff00;
+        }
+        #contactus .beautiful-background-image {
+            background-image: url("beautiful\ nature.avif");
+            background-size: 100%;
+            font-size: xx-large;
+            text-align: right;
+        }
+        #contactus .beautiful-background-image h1 {
+            color: #fff;
+        }
+        #search {
+            background-color: #ff9900;
+        }
+        #search .beautiful-background-image {
+            background-image: url("nature\ 2.avif");
+            background-size: 100%;
+            font-size: xx-large;
+            text-align: center;
+        }
+        #search .beautiful-background-image #searchMapsBar1, #search .beautiful-background-image #searchMapsBar2 {
+            width: 90%;
+            height: 25px;
+        }
+        #search .beautiful-background-image #searchMaps1, #search .beautiful-background-image #searchMaps2 {
+            width: 60px;
+            height: 30px;
+        }
+        #images img {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-navigation">
+        <ul>
+          <li><a id="button1" href="#home">Home</a></li>
+          <li><a id="button2" href="#about">About</a></li>
+          <li><a id="button3" href="#contactus">Contact us</a></li>
+          <li><a id="button4" href="#search">Search</a></li>
+          <li><a id="button5" href="#continue=https://jnblogspot.odoo.com">My Other Website</a></li>
+          <li><a id="button6" href="#images">Images</a></li>
+        </ul>
+        <div id="alignforURL">
+            <p id="url"></p>
+        </div>
+        <noscript>
+            <p style="background-color: red; color: white;">
+                <b>
+                    JavaScript isn't enabled for this website. Please enable this in settings.
+                </b>
+            </p>
+        </noscript>
+    </div>
+    <div id="home">
+        <div style="background-color: #fff;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <h1>Welcome to my website!</h1>
+        <br>
+        <div class="beautiful-background-image">
+            <h1>Live More. <br>Travel More.</h1>
+            <p><mark>"Embark on a journey of discovery with our travel<br>blog, where wanderlust meets storytelling. Explore<br>the world through our lens and let every page be a<br>passport to new adventures."</mark></p>
+            <p>
+                <b>
+                    <font color="white">
+                        Welcome to our wanderlust haven! Here at my website, we're passionate about all things travel. Whether you're a seasoned globetrotter or dreaming of your next adventure, you've come to the right place for inspiration, tips, and guides to fuel your wanderlust.
+                    </font>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>                
+                </b>
+            </p>
+        </div>
+    </div>
+    <div id="about">
+        <div style="background-color: #fff;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <h1>About this website!</h1>
+        <br>
+        <div class="beautiful-background-image">
+            <h1>About Page.</h1>
+            <p><mark>This site is all about travel blog. Explore new places around the world.</mark></p>
+            <p><b>
+                <font color="white">
+                    We travel. We're on a mission to share our passion for discovering the world with fellow adventurers like you.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Start today, you will not regret it.</p>
+                </font>
+                <br>
+                <a href="https://jnblogspot.odoo.com/contactus"><button>Start Today</button></a>
+                <a href="https://jnblogspot.odoo.com/web/login"><button>Login to jnblogspot.odoo.com</button></a>
+            </b></p>
+        </div>
+    </div>
+    <div id="contactus">
+        <div style="background-color: #fff;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <h1>Contact Us!</h1>
+        <br>
+        <div class="beautiful-background-image">
+            <h1>Reports/Concerns/Comments?</h1>
+            <a href="https://jnblogspot.odoo.com/contactus"><button id="contactbtn">Contact Us Message Form</button></a>
+            <h3>Do not worry, just click the button to continue to finish the contact us form.</h3>
+            <br>
+            <br>
+            <p>Got a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us via email at <a href="mailto:heavensentjn@gmail.com">heavensentjn@gmail.com</a>.
+                <br><br>
+            </p>
+        </div>
+    </div>
+    <div id="search">
+        <div style="background-color: #fff;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <h1>Search from both of these Google Websites to use directions or to find a new place for planning your next trip.</h1>
+        <br>
+        <div class="beautiful-background-image">
+            <a href="https://www.google.com/maps">
+                <img src="pngwing.com.png" alt="Google Maps Logo" width="50">
+            </a>
+            <h3><font color="blue">G</font><font color="red">o</font><font color="yellow">o</font><font color="blue">g</font><font color="green">l</font><font color="red">e</font>&nbsp;<font color="white">Maps Search Engine</font></h3>
+            <input type="text" id="searchMapsBar1">
+            <button type="button" id="searchMaps1">Search</button>
+            <br><br><br>
+            <a href="https://earth.google.com">
+                <img src="Google Earth Logo (PNG2160p) - Vector69Com.png" alt="Google Earth Logo" width="50">
+            </a>
+            <h3><font color="white">Google Earth Search Engine</font></h3>
+            <p><font color="white">You can search from Google Earth too!</font></p>
+            <br>
+            <input type="text" id="searchMapsBar2">
+            <button type="button" id="searchMaps2">Search</button>
+        </div>
+    </div>
+    <div id="images" align="center">
+        <div style="background-color: #fff;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <img src="zhangye danxia geopark in china.jpg" alt="Zhangye Danxia Geopark, China" width="400">
+        <br>
+        <br>
+        <br>
+        <img src="venice-italy.jpg" alt="Venice, Italy">
+        <img src="banff national park canada.jpg" alt="Banff National Park, Canada">
+        <img src="great ocean road australia.jpg" alt="Great Ocean Road, Australia">
+        <img src="machu picchu peru.jpg" alt="Machu Picchu, Peru">
+        <img src="pamukkale turkey.jpg" alt="Pamukkale, Turkey">
+        <img src="japan cherry blossom.jpg" alt="Cherry Blossom, Japan">
+        <img src="pitons saint lucia.jpg" alt="Pitons, St. Lucia">
+        <img src="marrakesh morroco.jpg" alt="Marrakesh, Morroco">
+        <img src="bora bora resort in french polynesia.jpg" alt="Bora Bora, French Polynesia">
+    </div>
+    <div id="footer" style="background-color: red; color: white;">
+        <p>&copy; location.host. All Rights Reserved</p>
+    </div>
+    <script>
+        document.getElementById("button1").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        document.getElementById("button2").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        document.getElementById("button3").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        document.getElementById("button4").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        document.getElementById("button5").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        document.getElementById("button6").onclick = () => {
+            setTimeout(() => { location.reload(); },1);
+        }
+        var url = document.getElementById("url").innerHTML = location.hash;
+        /* url is the detection if the location.hash's value exists */
+        if (url === "#continue=https://jnblogspot.odoo.com") {
+            location.href = "https://jnblogspot.odoo.com";
+        }
+        else if (url === "") {
+            location.href = "#home";
+            location.reload();
+        }
+        document.getElementById("searchMaps1").onclick = () => {
+            let mapssearchbar = document.getElementById("searchMapsBar1");
+            if (mapssearchbar.value != "") {
+                location.href = "https://www.google.com/maps/search/" + mapssearchbar.value;
+                mapssearchbar.value = "";
+            }
+        }
+        document.getElementById("searchMaps2").onclick = () => {
+            let mapssearchbar = document.getElementById("searchMapsBar2");
+            if (mapssearchbar.value != "") {
+                location.href = "https://earth.google.com/web/search/" + mapssearchbar.value;
+                mapssearchbar.value = "";
+            }
+        }
+        document.getElementById("footer").innerHTML = "&copy; " + location.host + ". All Rights Reserved";
+    </script>
+</body>
+</html>
