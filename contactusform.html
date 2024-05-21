@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 auto;
+        }
+        body{
+           font-family:Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #808080;
+            position: fixed;
+        }
+        header a{
+            color: #fff;
+        }
+        #body{
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://jntravelblog.netlify.app"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path fill="#007067" d="M11.9998836,4.09370803 L8.55809517,7.43294953 C8.23531459,7.74611298 8.23531459,8.25388736 8.55809517,8.56693769 L12,11.9062921 L9.84187871,14 L4.24208544,8.56693751 C3.91930485,8.25388719 3.91930485,7.74611281 4.24208544,7.43294936 L9.84199531,2 L11.9998836,4.09370803 Z"></path>
+          </svg> Back to Our Site
+        </a>
+    </header>
+    <div id="body">
+        <br>
+        <h1>Contact Us Form | Webpage from jntravelblog.netlify.app</h1>
+        <h3>Do not worry, we will try to get back to you as soon as possible.</h3>
+        <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission()">
+            <label>From: <input type="email" name="email" placeholder="Email" required></label>
+            <br><br>
+            <label><textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea></label>
+            <br>
+            <label><input type="submit" value="Send Message"></label>
+        </form>
+        <br>
+        <br>
+        <p><strong>Note</strong>: This message will be sent to heavensentjn@gmail.com.</p>
+        <br>
+        <button onclick="Autocomplete1()" id="textCompletion1">Autocomplete Text #1</button>
+        <br>
+        <button onclick="Autocomplete2()" id="textCompletion2">Autocomplete Text #2</button>
+        <br>
+        <button onclick="Autocomplete3()" id="textCompletion3">Autocomplete Text #3</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <a href="https://formspree.io">
+            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/formspree_logo_icon_170134.png" alt="Formspree Logo" width="100" height="50">
+        </a>
+        <a href="https://jntravelblog.netlify.app">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR9tv72APr1TsBcpMDia94JLwveHQyr-qXoA&usqp=CAU" alt="jntravelblog logo" width="50" height="50">
+        </a>
+        <a href="https://jnblogspot.odoo.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Odoo_logo.svg/600px-Odoo_logo.svg.png?20190610204127" alt="My Odoo Page" width="150" height="50">
+        </a>
+        <h4>Thanks to <a href="https://formspree.io">Formspree</a> for the form submission. <br>This page is also from <a href="https://jntravelblog.netlify.app">jntravelblog.netlify.app.</a></h4>
+    </div>
+    <script>
+        function Autocomplete1() {
+            document.getElementById("message").value = "Hello!";
+            document.getElementById("textCompletion1").innerHTML = "Change Text #1";
+            document.getElementById("textCompletion2").innerHTML = "Change Text #2";
+            document.getElementById("textCompletion3").innerHTML = "Change Text #3";
+        }
+        function Autocomplete2() {
+            document.getElementById("message").value = "What do you do during vacation?";
+            document.getElementById("textCompletion1").innerHTML = "Change Text #1";
+            document.getElementById("textCompletion2").innerHTML = "Change Text #2";
+            document.getElementById("textCompletion3").innerHTML = "Change Text #3";
+        }
+        function Autocomplete3() {
+            document.getElementById("message").value = "How to get to [place] from [any location]?";
+            document.getElementById("textCompletion1").innerHTML = "Change Text #1";
+            document.getElementById("textCompletion2").innerHTML = "Change Text #2";
+            document.getElementById("textCompletion3").innerHTML = "Change Text #3";
+        }
+        function checkStatusFormSubmission() {
+            if (!navigator.onLine) {
+                alert("Status: ---\nMessage: Network Connection Lost");
+                event.preventDefault();
+            }
+            else {
+                alert("Status: OK\nMessage: Sending request/msg to heavensentjn@gmail.com\n============================\nPlease Click OK to finish");
+            }
+        }
+    </script>
+</body>
+</html>
