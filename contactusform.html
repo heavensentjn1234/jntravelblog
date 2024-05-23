@@ -84,7 +84,7 @@
             <br>
             <label><input type="submit" value="Send Message" id="submit-form"></label>
             <label>
-                <button type="button" onclick="document.getElementById('mainform').removeAttribute('action'); setInterval(() => {document.getElementById('result_form').innerHTML = '<p style=text-align:left;color:red;>method=POST Status: ___<br>Message: Sending request/msg failed<br>Page is refreshing...</p>';}, 0);" id="cancelformsubmission" style="display: none; background-color: red; color: white; border-radius: 10px; width: 100px; height: 50px;">CANCEL FORM SUBMISSION</button>
+                <button type="button" onclick="document.getElementById('mainform').removeAttribute('action'); document.getElementById('mainform').setAttribute('action', window.location.href); setInterval(() => {document.getElementById('result_form').innerHTML = '<p style=text-align:left;color:red;>method=POST Status: ___<br>Message: Sending request/msg failed<br>Page is refreshing...</p>';}, 0);" id="cancelformsubmission" style="display: none; background-color: red; color: white; border-radius: 10px; width: 100px; height: 50px;">CANCEL FORM SUBMISSION</button>
             </label>
             <br>
             <br>
