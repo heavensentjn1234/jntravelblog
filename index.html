@@ -1,12 +1,15 @@
 <!-- html website
 
-plan on making a site-----------------
+plan on making a site
+-----------------
 
 
 following locations useful
-location.protocol
-location.host
-location.hash
+protocol
+domain
+hash
+
+=== protocol://domain#hash
 
 -->
 <!DOCTYPE html>
@@ -218,16 +221,42 @@ location.hash
         <br>
         <div class="beautiful-background-image">
             <h1>Reports/Concerns/Comments?</h1>
-            <a href="contactusform.html">
-                <button style="background-color: #333; border-radius: 5px; border: none; cursor: pointer; padding: 15px; color: white;">Contact Us Message Form</button>
-            </a>
-            <h3>Do not worry, just click the button to continue to finish the contact us form.</h3>
-            <br>
-            <br>
-            <p>Got a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us via email at <a href="mailto:heavensentjn@gmail.com">heavensentjn@gmail.com</a>.
+            <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission()" id="main-form" align="center" style="outline: auto; outline-color: #00ffff;">
+                <br>
+                <input type="email" name="email" placeholder="From Email:" required style="width: 50%; height: 20px;">
+                <br><br>
+                <textarea name="message" id="message" rows="10" placeholder="Type a message here: e.g. Hello!" required style="width: 50%;"></textarea>
+                <br>
+                <input type="submit" value="Send Message" id="submit-form" style="background-color: #525252; border-radius: 5px;width: 100px;height: 50px;cursor: pointer; color: #fff;" onclick="">
                 <br>
                 <br>
-            </p>
+                <span style="background-color: #00ff2a; color: #ffffff;" id="success-msg"></span>
+                <span style="background-color: #ff0000; color: #ffffff;" id="fail-msg"></span>
+            </form>
+            <script>
+                function checkStatusFormSubmission() {
+                    var form = document.getElementById('main-form');
+                    if (!navigator.onLine) {
+                        document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
+                        event.preventDefault();
+                    }
+                    else {
+                        document.getElementById('success-msg').innerHTML = "POST Status: OK | Sending now, please wait a moment";
+                    }
+                }
+            </script>
+            <font color="white">
+                <h3>
+                    Do not worry, just type your email address and your message only then click on the submit button to send this message to us.
+                </h3>
+                <br>
+                <br>
+                <p>
+                    Got a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us via email at <a href="mailto:heavensentjn@gmail.com">heavensentjn@gmail.com</a>.
+                    <br>
+                    <br>
+                </p>
+            </font>
         </div>
     </div>
     <div id="search">
@@ -287,29 +316,29 @@ location.hash
     </div>
     <script>
         document.getElementById("button1").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
         document.getElementById("button2").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
         document.getElementById("button3").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
         document.getElementById("button4").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
         document.getElementById("button5").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
         document.getElementById("button6").onclick = () => {
-            setTimeout(() => { location.reload(); },1);
+            setTimeout(() => { location.reload(); },100);
         }
-        var url = document.getElementById("url").innerHTML = location.hash;
-        /* url is the detection if the location.hash's value exists */
-        if (url === "#continue=https://jnblogspot.odoo.com") {
+        var urlhash = document.getElementById("url").innerHTML = location.hash;
+        /* urlhash is the detection if the location.hash's value exists */
+        if (urlhash === "#continue=https://jnblogspot.odoo.com") {
             location.href = "https://jnblogspot.odoo.com";
         }
-        else if (url === "") {
+        else if (urlhash === "") {
             location.href = "#home";
             location.reload();
         }
