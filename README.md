@@ -1,3 +1,2 @@
-Go to my url --> https://jntravelblog.netlfiy.app
-
-Made from Netlify and github
+Go to my url --> https://jntravelblog.pages.dev
+Site name made from Cloudflare
