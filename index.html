@@ -126,12 +126,12 @@ Enjoy visiting my website!
 <body>
     <div class="header-navigation">
         <ul>
-          <li><a id="button1" href="#home">Home</a></li>
-          <li><a id="button2" href="#about">About</a></li>
-          <li><a id="button3" href="#contactus">Contact us</a></li>
-          <li><a id="button4" href="#search">Search</a></li>
-          <li><a id="button5" href="#continue=https://jnblogspot.odoo.com">My Other Website</a></li>
-          <li><a id="button6" href="#images">Images</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a id="linkviahash" href="#continue=https://jnblogspot.odoo.com">My Other Website</a></li>
+          <li><a href="#images">Images</a></li>
         </ul>
         <div id="alignforURL">
             <p id="url"></p>
@@ -139,10 +139,7 @@ Enjoy visiting my website!
         <noscript>
             <p style="background-color: red; color: white;">
                 <b>
-                    JavaScript isn't enabled for this website. Please enable this feature in settings.
-                    <a href="https://support.google.com/adsense/answer/12654?hl=en" style="color:white;" target="_blank">
-                        Tutorial is in Google Adsense Help
-                    </a>
+                    JavaScript isn't enabled for this website. Please enable this in settings.
                 </b>
             </p>
         </noscript>
@@ -209,7 +206,7 @@ Enjoy visiting my website!
                     <br>
                     <br>
                     <p>
-                        <a href="#contactus" onclick="setTimeout(() => {location.reload();}, 100);">
+                        <a href="#contactus">
                             Start today, you will not regret it.
                         </a>
                     </p>
@@ -333,22 +330,7 @@ Enjoy visiting my website!
         <p>&copy; location.host. All Rights Reserved</p>
     </div>
     <script>
-        document.getElementById("button1").onclick = () => {
-            setTimeout(() => { location.reload(); },100);
-        }
-        document.getElementById("button2").onclick = () => {
-            setTimeout(() => { location.reload(); },100);
-        }
-        document.getElementById("button3").onclick = () => {
-            setTimeout(() => { location.reload(); },100);
-        }
-        document.getElementById("button4").onclick = () => {
-            setTimeout(() => { location.reload(); },100);
-        }
-        document.getElementById("button5").onclick = () => {
-            setTimeout(() => { location.reload(); },100);
-        }
-        document.getElementById("button6").onclick = () => {
+        document.getElementById("linkviahash").onclick = () => {
             setTimeout(() => { location.reload(); },100);
         }
         var urlhash = document.getElementById("url").innerHTML = location.hash;
