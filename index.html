@@ -356,21 +356,7 @@ Enjoy visiting my website!
     </script>
     <!-- JavaScript - pathname detector -->
     <script>
-        if (window.location.pathname !== "") {
-            document.body.innerHTML = `
-            <h1>Page not found</h1>
-            <p><a href='mailto:heavensentjn@gmail.com'>Contact the owner</a> if you think this is a mistake.</p>
-            <details>
-                <summary>Here are some factors that caused to trigger this error.</summary>
-                <ul>
-                    <li>This site may be unfinished, especially the owner is fixing the script in the site.</li>
-                </ul>
-            </details>
-            <br/>
-            <br/>
-            <a href='/' style='background-color:gray; text-decoration:none; padding:10px; color:white;'>Back to the main page</a>
-            `
-        }
+        console.log(window.location.pathname);
     </script>
 </body>
 </html>
