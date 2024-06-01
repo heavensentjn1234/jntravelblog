@@ -354,5 +354,14 @@ Enjoy visiting my website!
         }
         document.getElementById("footer").innerHTML = "&copy; " + location.host + ". All Rights Reserved";
     </script>
+    <!-- JavaScript - pathname detector -->
+    <script>
+        if (window.location.pathname == "/index.html") {
+            document.body.innerHTML = `
+            <h1>Page not found</h1>
+            <p><a href='/'>Back to the Home Page</a></p>
+            `
+        }
+    </script>
 </body>
 </html>
