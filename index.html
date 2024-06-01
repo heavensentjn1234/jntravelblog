@@ -357,7 +357,11 @@ Enjoy visiting my website!
     <!-- JavaScript - pathname detector -->
     <script>
         if (window.location.pathname !== "") {
-            alert("Sorry! Page not found");
+            document.body.innerHTML = `
+            <h1>Page not found</h1>
+            <p><a href='/#contactus'>Contact the owner</a> if you think this is a mistake.</p>
+            <a href='/' style='background-color:gray; padding:10px; color:white;'>Back to the main page</a>
+            `
         }
     </script>
 </body>
