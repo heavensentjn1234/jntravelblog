@@ -228,7 +228,7 @@ Enjoy visiting my website!
         <br>
         <div class="beautiful-background-image">
             <h1>Reports/Concerns/Comments?</h1>
-            <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission()" id="main-form" align="center" style="outline: auto; outline-color: #00ffff;">
+            <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission(); document.getElementById('submit-form').disabled = true;" id="main-form" align="center" style="outline: auto; outline-color: #00ffff;">
                 <br>
                 <input type="email" name="email" placeholder="From Email:" required style="width: 50%; height: 20px;">
                 <br><br>
@@ -246,7 +246,6 @@ Enjoy visiting my website!
             -->
             <script>
                 function checkStatusFormSubmission() {
-                    document.getElementById("submit-form").disabled = true;
                     if (!navigator.onLine) {
                         document.getElementById('fail-msg').style.display = "block";
                         document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
