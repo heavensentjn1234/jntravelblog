@@ -246,6 +246,7 @@ Enjoy visiting my website!
             -->
             <script>
                 function checkStatusFormSubmission() {
+                    document.getElementById("submit-form").disabled = true;
                     if (!navigator.onLine) {
                         document.getElementById('fail-msg').style.display = "block";
                         document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
@@ -261,6 +262,8 @@ Enjoy visiting my website!
 
                         document.getElementById('success-msg').style.display = "none";
                         document.getElementById('fail-msg').style.display = "none";
+
+                        document.getElementById("submit-form").disabled = false;
                     }, 3000);
                 }
             </script>
