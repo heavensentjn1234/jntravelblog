@@ -237,8 +237,8 @@ Enjoy visiting my website!
                 <input type="submit" value="Send Message" id="submit-form" style="background-color: #525252; border-radius: 5px;width: 100px;height: 50px;cursor: pointer; color: #fff;">
                 <br>
                 <br>
-                <span style="background-color: #f83e3e; padding:10px; color: #ff0000;" id="success-msg"></span>
-                <span style="background-color: #baf8ba; padding:10px; color: #00f800;" id="fail-msg"></span>
+                <span style="display:none; background-color: #f83e3e; padding:10px; color: #ff0000;" id="success-msg"></span>
+                <span style="display:none; background-color: #baf8ba; padding:10px; color: #00f800;" id="fail-msg"></span>
             </form>
             <!-- 
                 JavaScript only used for checking the status of the form
@@ -247,15 +247,20 @@ Enjoy visiting my website!
             <script>
                 function checkStatusFormSubmission() {
                     if (!navigator.onLine) {
+                        document.getElementById('fail-msg').style.display = "block";
                         document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
                         event.preventDefault();
                     }
                     else {
+                        document.getElementById('success-msg').style.display = "block";
                         document.getElementById('success-msg').innerHTML = "POST Status: OK | Sending now, please wait a moment";
                     }
                     setTimeout(() => {
                         document.getElementById('success-msg').innerHTML = "";
                         document.getElementById('fail-msg').innerHTML = "";
+
+                        document.getElementById('success-msg').style.display = "none";
+                        document.getElementById('fail-msg').style.display = "none";
                     }, 3000);
                 }
             </script>
