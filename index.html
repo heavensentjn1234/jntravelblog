@@ -235,12 +235,12 @@ Enjoy visiting my website!
                         document.getElementById("submit-form").value = "Sending...";
                         if (!navigator.onLine) {
                             document.getElementById('fail-msg').style.display = "block";
-                            document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
+                            document.getElementById('fail-msg').innerHTML = "Method Post: ❌<br>Internet Connection was off";
                             event.preventDefault();
                         }
                         else {
                             document.getElementById('success-msg').style.display = "block";
-                            document.getElementById('success-msg').innerHTML = "POST Status: OK | Sending now, please wait a moment";
+                            document.getElementById('success-msg').innerHTML = "Method Post: ✅<br>Sending now, please wait a moment";
                         }
                         setTimeout(() => {
                             document.getElementById('success-msg').innerHTML = "";
