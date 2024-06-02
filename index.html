@@ -63,63 +63,71 @@ Enjoy visiting my website!
             background-color: #000;
             color: #fff;
         }
-        #home {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .container #home {
             background-color: #00ffff;
         }
-        #home .beautiful-background-image {
+        .container #home .beautiful-background-image {
             background-image: url("beautiful\ bg\ image\ high\ def.jpg");
             background-size: 100%;
             font-size: xx-large;
             text-align: right;
         }
-        #home .beautiful-background-image h1 {
+        .container #home .beautiful-background-image h1 {
             color: #fff;
         }
-        #about {
+        .container #about {
             background-color: #09ff00;
         }
-        #about .beautiful-background-image {
+        .container #about .beautiful-background-image {
             background-image: url("beautiful\ bg\ img\ 2.avif");
             background-size: 100%;
             font-size: xx-large;
             text-align: right;
         }
-        #about .beautiful-background-image h1 {
+        .container #about .beautiful-background-image h1 {
             color: #fff;
         }
-        #contactus {
+        .container #contactus {
             background-color: #eeff00;
         }
-        #contactus .beautiful-background-image {
+        .container #contactus .beautiful-background-image {
             background-image: url("beautiful\ nature.avif");
             background-size: 100%;
             font-size: xx-large;
             text-align: right;
         }
-        #contactus .beautiful-background-image h1 {
+        .container #contactus .beautiful-background-image h1 {
             color: #fff;
         }
-        #search {
+        .container #search {
             background-color: #ff9900;
         }
-        #search .beautiful-background-image {
+        .container #search .beautiful-background-image {
             background-image: url("nature\ 2.avif");
             background-size: 100%;
             font-size: xx-large;
             text-align: center;
         }
-        #search .beautiful-background-image #searchMapsBar1, #search .beautiful-background-image #searchMapsBar2 {
+        .container #search .beautiful-background-image #searchMapsBar1, #search .beautiful-background-image #searchMapsBar2 {
             background-color: #fff;
             width: 90%;
             height: 25px;
         }
-        #search .beautiful-background-image #searchMaps1, #search .beautiful-background-image #searchMaps2 {
+        .container #search .beautiful-background-image #searchMaps1, #search .beautiful-background-image #searchMaps2 {
             cursor: pointer;
             width: 60px;
             height: 30px;
         }
-        #images img {
+        .container #images img {
             height: 200px;
+        }
+        .footer {
+            position: fixed;
+            padding:15px;
         }
     </style>
 </head>
@@ -139,165 +147,167 @@ Enjoy visiting my website!
         <noscript>
             <p style="background-color: red; color: white;">
                 <b>
-                    JavaScript isn't enabled for this website. Please enable this in settings.
+                    JavaScript isn't enabled for this website. Please enable this feature in settings.
                 </b>
             </p>
         </noscript>
     </div>
-    <div id="home">
-        <h1>Welcome to my website!</h1>
-        <br>
-        <div class="beautiful-background-image">
-            <h1>Live More. <br>Travel More.</h1>
-            <p><mark>"Embark on a journey of discovery with our travel<br>blog, where wanderlust meets storytelling. Explore<br>the world through our lens and let every page be a<br>passport to new adventures."</mark></p>
-            <p>
-                <b>
+    <div class="container">
+        <div id="home">
+            <h1>Welcome to my website!</h1>
+            <br>
+            <div class="beautiful-background-image">
+                <h1>Live More. <br>Travel More.</h1>
+                <p><mark>"Embark on a journey of discovery with our travel<br>blog, where wanderlust meets storytelling. Explore<br>the world through our lens and let every page be a<br>passport to new adventures."</mark></p>
+                <p>
+                    <b>
+                        <font color="white">
+                            Welcome to our wanderlust haven! Here at my website, we're passionate about all things travel. Whether you're a seasoned globetrotter or dreaming of your next adventure, you've come to the right place for inspiration, tips, and guides to fuel your wanderlust.
+                        </font>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>                
+                    </b>
+                </p>
+            </div>
+        </div>
+        <div id="about">
+            <h1>About this website!</h1>
+            <br>
+            <div class="beautiful-background-image">
+                <h1>About Page.</h1>
+                <p><mark>This site is all about travel blog. Explore new places around the world.</mark></p>
+                <p><b>
                     <font color="white">
-                        Welcome to our wanderlust haven! Here at my website, we're passionate about all things travel. Whether you're a seasoned globetrotter or dreaming of your next adventure, you've come to the right place for inspiration, tips, and guides to fuel your wanderlust.
+                        We travel. We're on a mission to share our passion for discovering the world with fellow adventurers like you.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>
+                            <a href="#contactus">
+                                Start today, you will not regret it.
+                            </a>
+                        </p>
                     </font>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>                
-                </b>
-            </p>
+                </b></p>
+            </div>
         </div>
-    </div>
-    <div id="about">
-        <h1>About this website!</h1>
-        <br>
-        <div class="beautiful-background-image">
-            <h1>About Page.</h1>
-            <p><mark>This site is all about travel blog. Explore new places around the world.</mark></p>
-            <p><b>
+        <div id="contactus">
+            <h1>Contact Us!</h1>
+            <br>
+            <div class="beautiful-background-image">
+                <h1>Reports/Concerns/Comments?</h1>
+                <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission();" id="main-form" align="center" style="outline: auto; outline-color: #00ffff;">
+                    <br>
+                    <input type="email" name="email" placeholder="From Email:" required style="width: 50%; height: 20px;">
+                    <br><br>
+                    <textarea name="message" id="message" rows="10" placeholder="Type a message here: e.g. Hello!" required style="width: 50%;"></textarea>
+                    <br>
+                    <input type="submit" value="Send Message" id="submit-form" style="background-color: #525252; border-radius: 5px;width: 100px;height: 50px;cursor: pointer; color: #fff;">
+                    <br>
+                    <br>
+                    <span style="display:none; background-color: #baf8ba; padding:10px; color: #00f800;" id="success-msg"></span>
+                    <span style="display:none; background-color: #f8d7da; padding:10px; color: #842029;" id="fail-msg"></span>
+                </form>
+                <!-- 
+                    JavaScript only used for checking the status of the form
+                    before submitting to https://formspree.io/f/mayrznay
+                -->
+                <script>
+                    function checkStatusFormSubmission() {
+                        document.getElementById("submit-form").disabled = true;
+                        document.getElementById("submit-form").value = "Sending...";
+                        if (!navigator.onLine) {
+                            document.getElementById('fail-msg').style.display = "block";
+                            document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
+                            event.preventDefault();
+                        }
+                        else {
+                            document.getElementById('success-msg').style.display = "block";
+                            document.getElementById('success-msg').innerHTML = "POST Status: OK | Sending now, please wait a moment";
+                        }
+                        setTimeout(() => {
+                            document.getElementById('success-msg').innerHTML = "";
+                            document.getElementById('fail-msg').innerHTML = "";
+    
+                            document.getElementById('success-msg').style.display = "none";
+                            document.getElementById('fail-msg').style.display = "none";
+    
+                            document.getElementById("submit-form").value = "Send Message";
+                            document.getElementById("submit-form").disabled = false;
+                        }, 3000);
+                    }
+                </script>
                 <font color="white">
-                    We travel. We're on a mission to share our passion for discovering the world with fellow adventurers like you.
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <h3>
+                        Do not worry, just type your email address and your message only then click on the 
+                        <q>
+                            Send Message
+                        </q>
+                        button to send this message to us.
+                    </h3>
                     <br>
                     <br>
                     <p>
-                        <a href="#contactus">
-                            Start today, you will not regret it.
-                        </a>
+                        Got a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us via email at <a href="mailto:heavensentjn@gmail.com">heavensentjn@gmail.com</a>.
+                        <br>
+                        <br>
                     </p>
                 </font>
-                <br>
-            </b></p>
+            </div>
         </div>
-    </div>
-    <div id="contactus">
-        <h1>Contact Us!</h1>
-        <br>
-        <div class="beautiful-background-image">
-            <h1>Reports/Concerns/Comments?</h1>
-            <form action="https://formspree.io/f/mayrznay" method="post" onsubmit="checkStatusFormSubmission();" id="main-form" align="center" style="outline: auto; outline-color: #00ffff;">
-                <br>
-                <input type="email" name="email" placeholder="From Email:" required style="width: 50%; height: 20px;">
-                <br><br>
-                <textarea name="message" id="message" rows="10" placeholder="Type a message here: e.g. Hello!" required style="width: 50%;"></textarea>
-                <br>
-                <input type="submit" value="Send Message" id="submit-form" style="background-color: #525252; border-radius: 5px;width: 100px;height: 50px;cursor: pointer; color: #fff;">
-                <br>
-                <br>
-                <span style="display:none; background-color: #baf8ba; padding:10px; color: #00f800;" id="success-msg"></span>
-                <span style="display:none; background-color: #f8d7da; padding:10px; color: #842029;" id="fail-msg"></span>
-            </form>
-            <!-- 
-                JavaScript only used for checking the status of the form
-                before submitting to https://formspree.io/f/mayrznay
-            -->
-            <script>
-                function checkStatusFormSubmission() {
-                    document.getElementById("submit-form").disabled = true;
-                    document.getElementById("submit-form").value = "Sending...";
-                    if (!navigator.onLine) {
-                        document.getElementById('fail-msg').style.display = "block";
-                        document.getElementById('fail-msg').innerHTML = "POST Status: Stopped | Internet Connection was off";
-                        event.preventDefault();
-                    }
-                    else {
-                        document.getElementById('success-msg').style.display = "block";
-                        document.getElementById('success-msg').innerHTML = "POST Status: OK | Sending now, please wait a moment";
-                    }
-                    setTimeout(() => {
-                        document.getElementById('success-msg').innerHTML = "";
-                        document.getElementById('fail-msg').innerHTML = "";
-
-                        document.getElementById('success-msg').style.display = "none";
-                        document.getElementById('fail-msg').style.display = "none";
-
-                        document.getElementById("submit-form").value = "Send Message";
-                        document.getElementById("submit-form").disabled = false;
-                    }, 3000);
-                }
-            </script>
-            <font color="white">
-                <h3>
-                    Do not worry, just type your email address and your message only then click on the 
-                    <q>
-                        Send Message
-                    </q>
-                    button to send this message to us.
-                </h3>
-                <br>
-                <br>
-                <p>
-                    Got a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us via email at <a href="mailto:heavensentjn@gmail.com">heavensentjn@gmail.com</a>.
-                    <br>
-                    <br>
-                </p>
-            </font>
-        </div>
-    </div>
-    <div id="search">
-        <h1>Search from both of these Google Websites to use directions or to find a new place for planning your next trip.</h1>
-        <br>
-        <div class="beautiful-background-image">
-            <a href="https://www.google.com/maps">
-                <img src="Google Maps Logo.png" alt="Google Maps Logo" width="50">
-            </a>
-            <h3><font color="blue">G</font><font color="red">o</font><font color="yellow">o</font><font color="blue">g</font><font color="green">l</font><font color="red">e</font>&nbsp;<font color="white">Maps Search Engine</font></h3>
-            <input type="text" id="searchMapsBar1">
-            <button type="button" id="searchMaps1">Search</button>
-            <br><br><br>
-            <a href="https://earth.google.com">
-                <img src="Google Earth Logo (PNG2160p) - Vector69Com.png" alt="Google Earth Logo" width="50">
-            </a>
-            <h3><font color="white">Google Earth Search Engine</font></h3>
-            <p><font color="white">You can search from Google Earth too!</font></p>
+        <div id="search">
+            <h1>Search from both of these Google Websites to use directions or to find a new place for planning your next trip.</h1>
             <br>
-            <input type="text" id="searchMapsBar2">
-            <button type="button" id="searchMaps2">Search</button>
+            <div class="beautiful-background-image">
+                <a href="https://www.google.com/maps">
+                    <img src="Google Maps Logo.png" alt="Google Maps Logo" width="50">
+                </a>
+                <h3><font color="blue">G</font><font color="red">o</font><font color="yellow">o</font><font color="blue">g</font><font color="green">l</font><font color="red">e</font>&nbsp;<font color="white">Maps Search Engine</font></h3>
+                <input type="text" id="searchMapsBar1">
+                <button type="button" id="searchMaps1">Search</button>
+                <br><br><br>
+                <a href="https://earth.google.com">
+                    <img src="Google Earth Logo (PNG2160p) - Vector69Com.png" alt="Google Earth Logo" width="50">
+                </a>
+                <h3><font color="white">Google Earth Search Engine</font></h3>
+                <p><font color="white">You can search from Google Earth too!</font></p>
+                <br>
+                <input type="text" id="searchMapsBar2">
+                <button type="button" id="searchMaps2">Search</button>
+            </div>
         </div>
-    </div>
-    <div id="images" align="center">
-        <img src="zhangye danxia geopark in china.jpg" alt="Zhangye Danxia Geopark, China" width="400">
-        <br>
-        <br>
-        <br>
-        <img src="venice-italy.jpg" alt="Venice, Italy">
-        <img src="banff national park canada.jpg" alt="Banff National Park, Canada">
-        <img src="great ocean road australia.jpg" alt="Great Ocean Road, Australia">
-        <img src="machu picchu peru.jpg" alt="Machu Picchu, Peru">
-        <img src="pamukkale turkey.jpg" alt="Pamukkale, Turkey">
-        <img src="japan cherry blossom.jpg" alt="Cherry Blossom, Japan">
-        <img src="pitons saint lucia.jpg" alt="Pitons, St. Lucia">
-        <img src="marrakesh morroco.jpg" alt="Marrakesh, Morroco">
-        <img src="bora bora resort in french polynesia.jpg" alt="Bora Bora, French Polynesia">
+        <div id="images" align="center">
+            <img src="zhangye danxia geopark in china.jpg" alt="Zhangye Danxia Geopark, China" width="400">
+            <br>
+            <br>
+            <br>
+            <img src="venice-italy.jpg" alt="Venice, Italy">
+            <img src="banff national park canada.jpg" alt="Banff National Park, Canada">
+            <img src="great ocean road australia.jpg" alt="Great Ocean Road, Australia">
+            <img src="machu picchu peru.jpg" alt="Machu Picchu, Peru">
+            <img src="pamukkale turkey.jpg" alt="Pamukkale, Turkey">
+            <img src="japan cherry blossom.jpg" alt="Cherry Blossom, Japan">
+            <img src="pitons saint lucia.jpg" alt="Pitons, St. Lucia">
+            <img src="marrakesh morroco.jpg" alt="Marrakesh, Morroco">
+            <img src="bora bora resort in french polynesia.jpg" alt="Bora Bora, French Polynesia">
+        </div>
     </div>
     <div id="footer" class="footer" style="background-color: red; color: white;">
         <p>&copy; location.host. All Rights Reserved</p>
