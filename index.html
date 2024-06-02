@@ -130,6 +130,9 @@ Enjoy visiting my website!
             padding:15px;
         }
     </style>
+    <script>
+        console.log("Welcome to my webpage! Want to download my site? Just click the link here to continue --> https://github.com/heavensentjn1234/jntravelblog/tree/main");
+    </script>
 </head>
 <body>
     <div class="header-navigation">
@@ -234,6 +237,7 @@ Enjoy visiting my website!
                         document.getElementById("submit-form").disabled = true;
                         document.getElementById("submit-form").value = "Sending...";
                         if (!navigator.onLine) {
+                            console.error("Internet connection is required for you to submit the form.");
                             document.getElementById('fail-msg').style.display = "block";
                             document.getElementById('fail-msg').innerHTML = "Method Post: ❌<br>Internet Connection was off";
                             event.preventDefault();
@@ -309,8 +313,8 @@ Enjoy visiting my website!
             <img src="bora bora resort in french polynesia.jpg" alt="Bora Bora, French Polynesia">
         </div>
     </div>
-    <div id="footer" class="footer" style="background-color: red; color: white;">
-        <p>&copy; location.host. All Rights Reserved</p>
+    <div id="footer" class="footer" style="background: #000; color: #fff;">
+        <p>&copy; location.host.</p>
     </div>
     <script>
         document.getElementById("linkviahash").onclick = () => {
@@ -343,6 +347,7 @@ Enjoy visiting my website!
     <!-- JavaScript - pathname detector -->
     <script>
         if (window.location.pathname != "/") {
+            console.error("The pathname does not exist on " + location.protocol + "//" + location.host);
             document.body.innerHTML = `
                 <h1>This page was not found.</h1>
                 <p><a href='mailto:heavensentjn@gmail.com'>Contact the owner</a> if you think this is a mistake.</p>
