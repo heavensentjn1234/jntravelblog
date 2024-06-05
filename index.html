@@ -336,7 +336,7 @@ Enjoy visiting my website!
         }
     </script>
     
-    <!-- JavaScript - pathname detector -->
+    <!-- JavaScript - host and pathname detector -->
     <!-- Before downloading, remove the line row 341 to 365 -->
     <script>
         if (window.location.pathname != "/") {
@@ -365,6 +365,23 @@ Enjoy visiting my website!
                     <a href='/'>
                         <button style='background-color:gray;padding:10px;color:white;'>Back to the Home Page</button>
                     </a>
+                </div>
+            `;
+        }
+        if (window.location.host != "jntravelblog.pages.dev") {
+            document.body.innerHTML = `
+                <h1>This site was moved to another URL.</h1>
+                <p><a href='https://jntravelblog.pages.dev'>Go to the new page</a></p>
+                <br>
+                <hr>
+                <div style='margin:8px'>
+                    <details>
+                        <summary>Caution:</summary>
+                        <p>This site was now moved to Cloudflare, it is no longer from Netlify.</p>
+                    </details>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             `;
         }
