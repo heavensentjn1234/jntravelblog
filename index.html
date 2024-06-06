@@ -9,9 +9,6 @@ DOMAIN NAME
 HASH
 
 ------------------
-Also you can download this website via GitHub.
-Here is my project
-https://github.com/heavensentjn1234/jntravelblog/tree/main
 
 ==================
 Enjoy visiting my website!
@@ -125,9 +122,6 @@ Enjoy visiting my website!
             height: 200px;
         }
     </style>
-    <script>
-        console.log("Welcome to my webpage! Want to download my site? Just click the link here to continue --> https://github.com/heavensentjn1234/jntravelblog/tree/main");
-    </script>
 </head>
 <body>
     <div class="header-navigation">
@@ -207,6 +201,7 @@ Enjoy visiting my website!
                 </b></p>
             </div>
         </div>
+        <br>
         <div id="contactus">
             <h1>Contact Us!</h1>
             <br>
@@ -272,6 +267,7 @@ Enjoy visiting my website!
                 </font>
             </div>
         </div>
+        <br>
         <div id="search">
             <h1>Search from both of these Google Websites to use directions or to find a new place for planning your next trip.</h1>
             <br>
@@ -293,6 +289,7 @@ Enjoy visiting my website!
                 <button type="button" id="searchMaps2">Search</button>
             </div>
         </div>
+        <br>
         <div id="images" align="center">
             <img src="zhangye danxia geopark in china.jpg" alt="Zhangye Danxia Geopark, China" width="400">
             <br>
@@ -340,7 +337,7 @@ Enjoy visiting my website!
     <!-- Before downloading, remove the line row 341 to 365 -->
     <script>
         if (window.location.pathname != "/") {
-            console.error("The pathname does not exist on " + location.protocol + "//" + location.host);
+            console.log("The pathname does not exist on " + location.protocol + "//" + location.host);
             document.body.innerHTML = `
                 <h1>This page was not found.</h1>
                 <p><a href='mailto:heavensentjn@gmail.com'>Contact the owner</a> if you think this is a mistake.</p>
@@ -375,8 +372,10 @@ Enjoy visiting my website!
                 <br>
                 <hr>
                 <div style='margin:8px'>
-                    <details>
-                        <summary>Caution:</summary>
+                    <details open>
+                        <summary>
+                            <strong>Note:</strong>
+                        </summary>
                         <p>This site was now moved to Cloudflare, it is no longer from Netlify.</p>
                     </details>
                     <br>
