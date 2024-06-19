@@ -334,7 +334,6 @@ Enjoy visiting my website!
     </script>
     
     <!-- JavaScript - host and pathname detector -->
-    <!-- Before downloading, remove the line row 341 to 365 -->
     <script>
         if (window.location.pathname != "/") {
             console.log("The pathname does not exist on " + location.protocol + "//" + location.host);
@@ -356,7 +355,7 @@ Enjoy visiting my website!
                     <br>
                     <details>
                         <summary>Take Note:</summary>
-                        <p>If you are downloading this website, please go to <a href='https://github.com/heavensentjn1234/jntravelblog/blob/main/README.md'>GitHub for instructions.</a></p>
+                        <p>lorem ipsum dolor sit amet</p>
                     </details>
                     <br>
                     <a href='/'>
@@ -366,23 +365,8 @@ Enjoy visiting my website!
             `;
         }
         if (window.location.host != "jntravelblog.pages.dev") {
-            document.body.innerHTML = `
-                <h1>This site was moved to another URL.</h1>
-                <p><a href='https://jntravelblog.pages.dev'>Go to the new page</a></p>
-                <br>
-                <hr>
-                <div style='margin:8px'>
-                    <details open>
-                        <summary>
-                            <strong>Note:</strong>
-                        </summary>
-                        <p>This site was now moved to Cloudflare, it is no longer from Netlify.</p>
-                    </details>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            `;
+            var locmove = confirm("this site was now moved to cloudflare. Do you want to see the new site?");
+            if (locmove) {window.location.href="https://bit.ly/3R4DOVP"}
         }
     </script>
 </body>
